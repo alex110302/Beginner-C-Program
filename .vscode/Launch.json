@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C/C++: Run Program",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/ProgramStart.exe",  // Path to the executable
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,        // Enable external console
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Run C Program",
+            "miDebuggerPath": "gdb",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}
